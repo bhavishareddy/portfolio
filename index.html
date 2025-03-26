@@ -3,48 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bishou's Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Bhavisha Reddy - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <header>
-        <h1>Bishou</h1>
-        <p>Frontend Developer | Full-Stack Enthusiast</p>
-        <nav>
-            <ul>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1 class="fade-in">Bhavisha Reddy</h1>
+            <p class="fade-in">Full-Stack Developer | Front-End Engineer</p>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button id="dark-mode-toggle">🌙 Dark Mode</button>
+            </nav>
+        </div>
     </header>
-    
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Pet Life Companion</h3>
-            <p>A pet management system with automated reminders and role-based access control.</p>
-        </div>
-        <div class="project">
-            <h3>Event Hub Web Application</h3>
-            <p>Event registration platform with RBAC and real-time updates.</p>
+
+    <section id="about" class="scroll-fade">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hello! I'm Bhavisha, a passionate developer who loves creating intuitive and scalable applications. I specialize in front-end and full-stack development.</p>
         </div>
     </section>
-    
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I'm a passionate front-end developer skilled in JavaScript, React, and UI/UX design.</p>
+
+    <section id="projects" class="scroll-fade">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Pet Life Companion Website</h3>
+                <p>Developed a pet management system using React.js, Node.js, and MongoDB. Integrated automated SMS/email reminders.</p>
+                <a href="#" class="btn">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Event Hub Web Application</h3>
+                <p>Built an event registration platform with Angular and Spring Boot. Implemented RBAC and improved performance by 95%.</p>
+                <a href="#" class="btn">View Project</a>
+            </div>
+        </div>
     </section>
-    
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:bhavishamallareddy@gmail.com">bhavishamallareddy@gmail.com</a></p>
-        <p>GitHub: <a href="https://github.com/yourgithub" target="_blank">github.com/yourgithub</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/yourlinkedin" target="_blank">linkedin.com/in/yourlinkedin</a></p>
+
+    <section id="contact" class="scroll-fade">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:bhavishamallareddy@gmail.com">bhavishamallareddy@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com" target="_blank">LinkedIn Profile</a></p>
+        </div>
     </section>
-    
+
     <footer>
-        <p>&copy; 2025 Bishou. All Rights Reserved.</p>
+        <div class="container">
+            <p>&copy; 2025 Bhavisha Reddy. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>

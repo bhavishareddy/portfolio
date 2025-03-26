@@ -1,85 +1,85 @@
-/* Resetting default browser styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
     background-color: #f4f4f4;
+    color: #333;
+    transition: background 0.3s, color 0.3s;
 }
 
 .container {
     width: 80%;
     margin: 0 auto;
+    padding: 20px 0;
 }
 
 header {
-    background-color: #333;
+    background: linear-gradient(45deg, #007BFF, #6610f2);
     color: #fff;
-    padding: 1rem 0;
     text-align: center;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-header h1 {
-    font-size: 2.5rem;
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 0;
 }
 
-header nav ul {
-    list-style-type: none;
-    margin-top: 1rem;
-}
-
-header nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-header nav ul li a {
+nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s;
 }
 
-section {
-    padding: 2rem 0;
+nav ul li a:hover {
+    color: #ffcc00;
 }
 
-section h2 {
-    text-align: center;
-    margin-bottom: 1rem;
-    font-size: 2rem;
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    background: #0056b3;
 }
 
 .project {
-    margin-bottom: 1.5rem;
-    background-color: #fff;
-    padding: 1rem;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
-.project h3 {
-    font-size: 1.5rem;
-}
-
-.project a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-}
-
-#contact p {
-    font-size: 1.1rem;
-    text-align: center;
+.scroll-fade {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
     text-align: center;
-    padding: 1rem 0;
-    margin-top: 2rem;
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    margin-top: 20px;
 }
